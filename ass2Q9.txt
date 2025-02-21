@@ -1,0 +1,22 @@
+<html>
+ <body>
+  <form method="get" action="max.php">
+   Enter no1:
+    <input type="text" name="r1"><br>
+   Enter no2:
+    <input type="text" name="r2"><br>
+     <input type="submit" value="ok"><br>
+  </form>
+ </body>
+</html>
+<?php
+ $a=$_GET["r1"];
+ $b=$_GET["r2"];
+ if($a>$b)
+   echo("<br>a is max number".$a);
+ else
+   echo("<br>b is max number".$b);
+?>
+
+
+
