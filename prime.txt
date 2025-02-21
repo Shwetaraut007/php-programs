@@ -1,0 +1,17 @@
+prime<-function(n){
+  f=o
+ for(i in 2:n)
+ {if(n%%i==0)
+   {f=1
+    break
+   }
+  }
+ if(f==0)
+  print("number is prime")
+ else
+ print("number is not prime")
+ }
+ n=readline("enter no")
+enter no 6
+ n=as.numeric(n)
+ prime(n)

@@ -1,21 +1,23 @@
 <?php
-     session_start();
-       $sno=$_POST["t1"];
-       $n=$_POST["t2"];
-       $c=$_POST["t3"];
-       $_SESSION["setno"]=$sno;
-       $_SESSION["name"]=$n;
-       $_SESSION["class"]=$c;
+    session_start();
+    $n=$_POST["t1"];
+    $add=$_POST["t2"];
+    $ph=$_POST["t3"];
+ $_SESSION["name"]=$n;
+ $_SESSION["address"]=$add;
+ $_SESSION["phone"]=$ph;
+?>
 <html>
-    <body>
-      <h1>Student Details</h1>
-       <form method="post"action="ASS5Q6ii.php">
-           select subject marks:
-              <input type="checkbox"name="t4"value="DSA">DSA<br>
-              <input type="checkbox"name="t5"value="PHP">PHP<br>
-              <input type="checkbox"name="t6"value="JAVA">JAVA<br>
-              <input type="checkbox"name="t7"value="CPP">CPP<br>
-              <input type="submit"value="next"><br>
-      </form>
-    </body>
-</html>
+ <body>
+ <h1>Shopping Datails</h1>
+  <form method="post" action="page3.php">
+    Product Name:
+     <input type="text" name="t4"><br>
+    Product Price:
+     <input type="text" name="t5"><br>
+    Quantity:
+     <input type="text" name="t6"><br>
+    <input type="submit"  value="next"><br>
+ </form>
+</body>
+ </html>
